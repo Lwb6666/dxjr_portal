@@ -151,6 +151,7 @@ public class AccountDetailController extends BaseController {
 
 			return forword(BusinessConstants.NO_PAGE_FOUND_404);
 		}
+		System.out.println("测试git提交");
 		mav.addObject("member", member);
 		mav.addObject("userlevel", memberServiceImpl.queryUserLevelByMemberId(memberServiceImpl.queryMemberByCnd(memberCnd).getId()));
 		return mav;
